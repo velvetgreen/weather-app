@@ -1,0 +1,40 @@
+.root {
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  color: #842029;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  opacity: 70%  ;
+  text-transform: uppercase;
+}
+.block {
+  display: flex;
+  width: auto;
+  background-color: #f8d7da;
+  text-align: center;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: .25rem;
+  border-color: #f5c2c7;
+  margin: 2px;
+  justify-content: space-between;
+  padding-left: 5px;
+
+}
+.button {
+  width: 25px;
+  height: 25px;
+  margin-top: -5px;
+  margin-right: -5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border:none;
+  align-items: center;
+  cursor: pointer;
+  opacity: 80%;
+}

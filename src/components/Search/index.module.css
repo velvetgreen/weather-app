@@ -1,0 +1,60 @@
+.root {
+  position: absolute;
+  margin-right: 20px;
+  margin-top: 20px;
+  z-index: 1;
+  opacity: 90%;
+  flex-direction: column;
+}
+.wrapper {
+  background-color: rgba(65, 61, 61, 70%);
+  border-radius: 5px;
+  padding: 3px;
+  display: flex;
+}
+.search {
+  width: 300px;
+  padding: 0 0 0 3px;
+  border: none;
+  outline: none;
+  height: 30px;
+  background: none;
+  color: white;
+}
+.searchButton {
+  color:white;
+  background: none;
+  border: none;
+  outline: none;
+  height: 30px;
+}
+::placeholder {
+  color:white;
+  opacity: 60%;
+}
+
+.suggestRoot {
+  background-color: rgba(65, 61, 61, 90%);
+  opacity: 60%;
+  border-radius: 0 0 5px 5px;
+  color:white;
+}
+.block {
+cursor: pointer;
+padding: 2px 2px 2px 5px;
+}
+.active {
+  background-color: rgb(41, 39, 39);
+}
+.border {
+  border-radius: 5px 5px 0 0;
+}
+
+@media (max-width:667px) {
+  .search {
+    width: auto;
+  }
+  .root {
+    margin-right: 10px;
+  }
+}

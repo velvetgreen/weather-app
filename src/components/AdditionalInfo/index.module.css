@@ -1,0 +1,14 @@
+.root {
+display: flex;
+justify-content: space-between;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  white-space: normal;
+}
+.bold {
+  font-weight: 600;
+  font-size: 20px;
+}
