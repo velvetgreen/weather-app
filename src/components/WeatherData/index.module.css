@@ -1,9 +1,10 @@
 .root {
+  /* overflow: auto; */
   min-height: 100px;
   width: 321px;
   background-color: rgba(65, 61, 61, 70%);
   position: absolute;
-  top: 300px;
+  top: 200px;
   left: 50px;
   display: flex;
   align-items: flex-start;
@@ -25,6 +26,7 @@
   width: 505px !important;
 }
 .button {
+  outline: none;
   border: none;
   background: none;
   width: 300px;
@@ -68,7 +70,7 @@
 
 @media (max-width:667px) {
   .root {
-    font-size: 12px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;

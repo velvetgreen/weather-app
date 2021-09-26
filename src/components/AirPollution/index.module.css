@@ -1,15 +1,14 @@
 .root {
-  z-index: 1;
+  font-size: 17px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .wrapper {
-  display: flex;
+  width: 150px;
   opacity: 0;
   transition: opacity 1s linear;
   visibility: hidden;
-  width: 190px;
-  flex-wrap: wrap;
 }
 .wrapper.visible {
   visibility: visible;
@@ -17,74 +16,61 @@
 }
 
 .block {
-  background-color: rgb(204, 126, 8);
-  border: 1px solid white;
+  border-bottom: 1px solid rgb(151, 149, 149);
   padding: 5px;
-  height: 50px;
-  width: 82px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
 }
 .block sub {
   font-size: 12px;
 }
-.block.safe {
-  background-color: rgb(64, 114, 64);
+.name {
+  font-weight: 600;
+  white-space: nowrap;
+  color: rgb(230, 213, 65);
+}
+.name.safe {
+  color: white;
 }
 .block:hover::after {
+  z-index: 1;
   background-color: white;
   border-radius: 5px;
   text-transform: none;
   color: black;
   display: block;
   padding: 10px;
-  width: 400px;
-  position: relative;
-  font-size: x-small;
-  max-width: 300px;
-  top: 0px;
-  left: 5px;
-}
-
-.bold {
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.closeButton {
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  border: none;
+  width: 100px;
   position: absolute;
-  right: 5px;
-  bottom: 270px;
-  opacity: .8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
+  font-size: x-small;
+  width: 300px;
+  top: 2px;
+  left: 50px;
 }
 
 @media screen and (max-width: 667px) {
   .root {
     margin-bottom: 20px;
+    margin-left: 0;
+
   }
   .wrapper {
-    width: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 2%;
-    grid-row-gap: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .block {
-    width: 30px;
+    width: 100px;
     height: 30px;
   }
   .block:hover::after {
-    top: 0;
+    top: 20px;
+    left: -50px;
     font-size: 10px;
-    top: 100px;
-    left: 45px;
     opacity: .9;
     width: 200px;
     position: absolute;

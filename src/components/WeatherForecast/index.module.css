@@ -16,3 +16,7 @@ margin-bottom: 10px;
   font-weight: 600;
   margin-bottom: 5px;
 }
+.description img {
+  height: 80px;
+  width: 80px;
+}

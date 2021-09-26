@@ -28,16 +28,16 @@ export const AirPollution: React.FC<AirPollutionPropsType> = ({ isVisible }) => 
       <div className={cn([s.wrapper], { [s.visible]: isVisible })}>
         {Object.entries(pollutionData).map(([key, value]) => (
           <div
-            className={
-              cn([s.block], { [s.safe]: getPollutionLevel(key, value) === 'safe' })
-            }
+            className={s.block}
             data-element={key}
             key={key}
           >
-            <span className={s.bold}>
+            <span
+              className={cn([s.name], { [s.safe]: getPollutionLevel(key, value) === 'safe' })}
+            >
               {tokenize(key)}
+              :
             </span>
-            :
             {' '}
             {Math.round(value)}
           </div>

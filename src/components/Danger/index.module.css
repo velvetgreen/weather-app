@@ -1,13 +1,13 @@
 .root {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   right: 5px;
   color: #842029;
   display: flex;
   flex-direction: column;
   z-index: 1;
   align-items: center;
-  opacity: .7;
+  opacity: .8;
   text-transform: uppercase;
 }
 .block {
@@ -37,4 +37,11 @@
   align-items: center;
   cursor: pointer;
   opacity: .8;
+}
+
+@media (max-width:667px) {
+  .root {
+    bottom: 5px;
+    right: 10px;
+  }
 }

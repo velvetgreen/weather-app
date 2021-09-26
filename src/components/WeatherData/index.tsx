@@ -17,7 +17,7 @@ export const WeatherData: React.FC = () => {
   const togglePollutionBlockVisibility = () => {
     setIsPollutionBlockVisible(!isPollutionBlockVisible);
 
-    if (isPollutionBlockVisible) {
+    if (!isPollutionBlockVisible) {
       setButtonText('Hide pollution data');
     } else {
       setButtonText('Show pollution data');

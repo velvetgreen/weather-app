@@ -10,7 +10,9 @@ export const Danger: React.FC = () => {
     const currentAlerts: string[] = [];
     if (typeof weatherData?.alerts !== 'undefined') {
       weatherData.alerts.forEach((alert) => {
-        currentAlerts.push(alert.event);
+        if (/^[a-zA-Z]+$/.test(`${alert.event}`)) {
+          currentAlerts.push(alert.event);
+        }
       });
       const uniq = currentAlerts.filter((item, pos) => currentAlerts.indexOf(item) === pos);
       setAlerts(uniq);
